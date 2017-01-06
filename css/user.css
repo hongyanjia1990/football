@@ -1,0 +1,126 @@
+*{
+	box-sizing:border-box;
+}
+html,body{
+	height:100%;
+}
+header{
+	width:10rem;
+	height:1.38rem;
+	background:#0dc441;
+	font-family: "微软雅黑";
+	font-size:32px;
+	color:#ffffff;
+	text-align: center;
+	line-height: 1.38rem;
+}
+body{
+	display:flex;
+	flex-direction:column;
+}
+section{
+	flex:1;
+	width:10rem;
+	overflow: auto;
+}
+
+section .result{
+	background: #f1f1f1;
+	padding-top:0.16rem;
+	position:fixed;
+	width:10rem;
+}
+section .result .per{
+	background: #ffffff;
+	border-bottom:1px solid #f1f1f1;
+}
+/*section .result .per:nth-child(n+2){
+	margin-top:0.19rem;
+}*/
+section .result .info{
+	overflow: hidden;
+	padding-left:0.34rem;
+	padding-right:0.34rem;
+	height:2.19rem;
+	padding-top:0.34rem;
+}
+section .result .fav{
+	display: inline-block;
+	width:1.52rem;
+	height:1.52rem;
+	border:1px solid #bbbbbb;
+	border-radius: 100%;
+	background: url(../img/2_03.png) no-repeat center;
+	background-size: 90%;
+	float:left;
+}
+section .result .info1{
+	float:left;
+	width:7.5rem;
+	padding-left:0.38rem;
+}
+section .info1 a{
+/*	float:left;*/
+	font-size: 28px;
+	font-family: "微软雅黑";
+	color:#000;
+
+}
+section .info1 p:nth-child(1){
+	line-height: 0.89rem;
+}
+section .info1 p:nth-child(2){
+	font-size: 23px;
+	font-family: "微软雅黑";
+	color:#a1a1a1;
+}
+
+.content ul{
+	width:10rem;
+	height:1rem;
+	display: flex;
+	position: fixed;
+	background: #ffffff;
+}
+.content ul li{
+	flex:1;
+	line-height: 1rem;
+	text-align:center;
+	font-size: 23px;
+	font-family: "微软雅黑";
+	color:#a1a1a1;
+}
+.content li i{
+	font-style: normal;
+}
+.content ul .active{
+	color:#0dc441;
+	border-bottom: 0.094rem solid #0dc441;
+
+}
+.content{
+	padding-top:2.37rem;
+
+}
+.detail{
+	overflow: auto;
+	margin-top:1rem;
+	
+}
+
+.image figure{
+	width:4.89rem;
+	height:4.89rem;
+	background:url(../img/1_03.png) no-repeat;
+	background-size: 100%;
+	border:1px solid #e5e5e5;
+}
+section .image figure:nth-child(2n){
+	float:right;	
+}
+section .image figure:nth-child(2n+1){
+	float:left;	
+}
+section .image figure:nth-child(n+3){
+	margin-top:0.08rem;
+}
